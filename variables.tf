@@ -9,6 +9,11 @@ variable "network_description" {
   description = "describe your network homie"
   default     = "vpc"
 }
+variabel "network_routing_mode" {
+  type         = string
+  describption = "REGIONAL or GLOBAL"
+  default      = "REGIONAL"
+}
 variable "subnetworks" {
   description = "Map of subnetwork names to configuration"
   default     = {}
