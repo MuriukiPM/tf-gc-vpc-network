@@ -11,7 +11,7 @@ variable "network_description" {
 }
 variable "network_routing_mode" {
   type         = string
-  describption = "REGIONAL or GLOBAL"
+  description = "REGIONAL or GLOBAL"
   default      = "REGIONAL"
 }
 variable "subnetworks" {
