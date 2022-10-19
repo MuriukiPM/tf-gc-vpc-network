@@ -20,6 +20,7 @@ resource "google_compute_subnetwork" "vpc_subnetwork" {
     }
   }
 
-  network = google_compute_network.vpc_network.self_link
-  region  = each.value.region
+  network                  = google_compute_network.vpc_network.self_link
+  region                   = each.value.region
+  private_ip_google_access = lookup(each.value, "private_ip_google_access", false)
 }

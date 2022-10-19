@@ -10,9 +10,9 @@ variable "network_description" {
   default     = "vpc"
 }
 variable "network_routing_mode" {
-  type         = string
+  type        = string
   description = "REGIONAL or GLOBAL"
-  default      = "REGIONAL"
+  default     = "REGIONAL"
 }
 variable "subnetworks" {
   description = "Map of subnetwork names to configuration"
