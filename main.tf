@@ -1,3 +1,13 @@
+terraform {
+  required_version = ">= 0.13"
+  required_providers {
+    aws = {
+      source  = "hashicorp/google"
+      version = "^4.0.0"
+    }
+  }
+}
+
 resource "google_compute_network" "vpc_network" {
   name                    = var.network_name
   auto_create_subnetworks = var.network_auto_create_subnetworks
